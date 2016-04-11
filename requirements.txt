@@ -6,3 +6,5 @@ MarkupSafe==0.23
 Werkzeug==0.11.2
 wheel==0.24.0
 tumblr.js=0.0.7
+node.js=4.2.2
+npm=2.14.7
