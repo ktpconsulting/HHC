@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block home %}
+	<body>
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a href="index">Hip Hop Congress Blog</a></strong> @ U of M</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index">Home</a></li>
+						<li><a href="generic">Blog</a></li>
+						<li><a href="contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Hip Hip Congress</h2>
+						<p>Read about what we've been up to</p>
+					</header>
+
+					<a href="generic" class="image fit"><img src="static/images/concertdark.jpg" alt="" /></a>
+					{% for x in range(lenlist): %}
+					<h2>{{ titlelist[x] }}</h2>
+					<p>{{ fixedbodylist[x] }}</p>
+					{% endfor %}
+
+					<!-- <h2>{{testtitle}}</h2> -->
+
+				</div>
+			</section>
+{% endblock %}
