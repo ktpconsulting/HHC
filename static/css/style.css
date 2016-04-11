@@ -49,6 +49,9 @@ THIS ALSO CHANGES ICON COLOR FROM PINK TO BLUE.*/
 		color: #484848;
 		font-weight: 700;
 	}
+	#umtext b {
+		color: white;
+	}
 
 	em, i {
 		font-style: italic;
