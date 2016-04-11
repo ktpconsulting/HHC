@@ -504,6 +504,9 @@ THIS ALSO CHANGES ICON COLOR FROM PINK TO BLUE.*/
 		display: inline-block;
 		position: relative;
 	}
+	#staticblogpic {
+		margin-bottom: 10%;
+	}
 
 		.image img {
 			border-radius: 4px;

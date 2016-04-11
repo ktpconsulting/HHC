@@ -12,10 +12,10 @@ function getPosts (cb) {
 function appendPost (post, selector) {
   if (post.photos) {
     $(selector).append('<div class="row 50% uniform"><div class="12u$"><span class="image fit blog" id="blogpics"><img src="'+post.photos[0].alt_sizes[0].url+'"/></span></div></div>');
-    $(selector).append('<p id="captiontext">'+post.caption+'</p>');
+    $(selector).append('<p id="captiontext">'+post.caption+'</p><hr>');
   } else {
     $(selector).append('<h2>'+post.title+'</h2>');
-    $(selector).append(post.body);
+    $(selector).append(post.body+'<hr>');
   }
 }
 
